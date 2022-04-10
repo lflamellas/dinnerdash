@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+:root {
+    --nav-links-color: #fff;
+    --button-hover-color: #878584;
+    --backoffice-menu-bg: #343a40;
+    --table-head-bg: #e9ecef;
+    --nav-link-hover-color: #f79800;
+    --footer-color: #e3e3e3;
+    --dark-layer: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6));
+    --edit-button-color: #ffa207;
+    --delete-button-color: #dc3545;
+    --pagination-active-bg: #007bff;
+    }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: var(--dark-layer), url(./img_bg_backoffice_usuario.jpg);
+    background-size: 100%;
+    color: var(--nav-links-color);
+}
+
+header > *{
+    padding: 0rem 2.5rem;
+}
+
+nav {
+    font-weight: bold;
+    width: 100%;
+    color: var(--nav-links-color);
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    padding: 1rem 2.5rem;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links ul li{
+    margin-left: 2rem;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.menu {
+    background: var(--backoffice-menu-bg);
+    line-height: 3rem;
+    font-size: 0.9rem;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin-right: 2rem;
+}
+
+
+.users-table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+tr > * {
+    padding: 0 0.8rem;
+}
+
+th {
+    height: 3rem;
+}
+
+td {
+    height: 2rem;
+}
+
+.users-table tr:first-child {
+    font-weight: bold;
+    background: var(--table-head-bg);
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+button:hover {
+    color: var(--button-hover-color);
+}
+
+.edit-button {
+    color: var(--edit-button-color);
+}
+
+.delete-button {
+    color: var(--delete-button-color);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+
+}
+
+.pagination button {
+    border: 1px solid gray;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.active {
+    background: var(--pagination-active-bg);
+}
+
+footer {
+    background: var(--footer-color);
+    display:flex;
+    justify-content: space-between;
+    padding: 0.5rem 2.5rem;
+    font-size: 0.8rem;
+}
+
